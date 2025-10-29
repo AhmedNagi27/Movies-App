@@ -2,4 +2,22 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--    light Theme-->
+    <color name="md_theme_primary">#FF3B30</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_background">#FFFFFF</color>
+    <color name="md_theme_light_surface">#F0F0F0</color>
+    <color name="black_opacity_70">#B3000000</color>
+    <color name="button_secondary_background">#FFFFFF</color>
+    <color name="button_secondary_stroke">#FF3B30</color>
+    <color name="text_secondary">#757575</color>
+
+
+    <color name="btmNav_content">#0296E5</color>
+    <color name="main_background">#242A32</color>
+    <color name="second_background">#272729</color>
+    <color name="btmNav_content_notSelected">#67686D</color>
+    <color name="text_primary">#EEEEEE</color>
+
 </resources>

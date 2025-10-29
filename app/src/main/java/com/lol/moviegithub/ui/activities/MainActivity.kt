@@ -1,4 +1,4 @@
-package com.lol.moviegithub
+package com.lol.moviegithub.ui.activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.lol.moviegithub.R
 import com.lol.moviegithub.databinding.ActivityMainBinding
 import com.lol.movies.ui.fragments.NowPlayingFragment
 import com.lol.movies.ui.fragments.PopularFragment

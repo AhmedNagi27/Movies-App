@@ -1,6 +1,5 @@
-package com.lol.movies.ui.activities
+package com.lol.moviegithub.ui.activities
 
-import MovieViewModel
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
@@ -9,11 +8,10 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
-import com.lol.movies.R
-import com.lol.movies.databinding.ActivityMovieDetailsBinding
+import com.lol.moviegithub.R
+import com.lol.moviegithub.databinding.ActivityMovieDetailsBinding
+import com.lol.moviegithub.ui.MovieViewModel
 import com.lol.movies.util.UiState
 import kotlin.getValue
 import kotlin.math.roundToInt
@@ -29,11 +27,7 @@ class MovieDetailsActivity : AppCompatActivity() {
     binding = ActivityMovieDetailsBinding.inflate(layoutInflater)
     setContentView(binding.root)
     enableEdgeToEdge()
-    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.movieDetailsScreen)) { v, insets ->
-      val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-      v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-      insets
-    }
+
     val movieId: Int = intent.getIntExtra("movieId", 0)
 
     binding.backBtn.setOnClickListener { finish() }

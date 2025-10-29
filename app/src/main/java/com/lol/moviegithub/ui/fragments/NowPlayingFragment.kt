@@ -1,7 +1,5 @@
 package com.lol.movies.ui.fragments
 
-import com.lol.movies.ui.MovieAdapter
-import MovieViewModel
 import android.R
 import android.graphics.Color
 import android.os.Bundle
@@ -11,10 +9,11 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.*
 import androidx.recyclerview.widget.GridLayoutManager
-import com.lol.movies.databinding.FragmentNowPlayingBinding
+import com.lol.moviegithub.databinding.FragmentNowPlayingBinding
+import com.lol.moviegithub.ui.MovieViewModel
+import com.lol.movies.ui.MovieAdapter
 import com.lol.movies.util.UiState
 import kotlin.getValue
 
@@ -38,8 +37,7 @@ class NowPlayingFragment : Fragment() {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
     super.onViewCreated(view, savedInstanceState)
-    adapter =
-        MovieAdapter(emptyList()) {}
+    adapter = MovieAdapter(emptyList()) {}
 
     binding.nowPlayingRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
     binding.nowPlayingRecyclerView.adapter = adapter

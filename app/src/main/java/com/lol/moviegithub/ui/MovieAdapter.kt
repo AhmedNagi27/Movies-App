@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.lol.movies.R
 import com.lol.movies.data.model.Movie
 import com.lol.movies.databinding.ItemMovei2Binding
-import com.lol.movies.ui.activities.MovieDetailsActivity
+import com.lol.moviegithub.ui.activities.MovieDetailsActivity
 import kotlin.jvm.java
 import kotlin.math.roundToInt
 
